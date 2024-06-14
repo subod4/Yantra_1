@@ -9,7 +9,9 @@ import 'package:yantra/pages/setting.dart';
 import 'package:yantra/pages/timing.dart';
 
 void main() {
-  runApp(MaterialApp(home: MyApp()));
+  runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
