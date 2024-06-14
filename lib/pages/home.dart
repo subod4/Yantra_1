@@ -76,6 +76,7 @@ class Home extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(20)
+
                         ),
                         child: GestureDetector(
                             onTap: () {
