@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:yantra/pages/edit_information.dart';
 import 'package:yantra/pages/profile.dart';
 import 'package:yantra/pages/setting.dart';
 
@@ -33,6 +34,10 @@ class _MyAppState extends State<CustomerHome> {
               ListTile(
                 leading:Icon(Icons.edit),
                 title: Text('E D I T  Informaation'),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => editInfo()));
+                },
               ),
               ListTile(
                 leading: Icon(Icons.call),
