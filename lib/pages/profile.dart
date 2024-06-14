@@ -52,11 +52,53 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
             ),
+            const SizedBox(height: 10),
             Expanded(
+
               flex: 2,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.green,
+
+                ),
+                child: Center(
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 30),
+                      Container(
+                        height: 100,
+                        width: 370,
+                        color: Colors.blue,
+                        child:Row(
+                          children: [
+                            Container(
+                              height:100,
+                              width: 70,
+                              child: Icon(Icons.person, color: Colors.white,size: 100,),
+                            ),
+                            Container(
+                                child: Text('Mohit Adhikari'),
+                            ),
+                          ],
+                        )
+                      ),const SizedBox(height: 10),
+                      Container(
+                        height: 100,
+                        width: 370,
+                        color: Colors.blue,
+                      ),const SizedBox(height: 10),
+                      Container(
+                        height: 100,
+                        width: 370,
+                        color: Colors.blue,
+                      ),const SizedBox(height: 10),
+                      Container(
+                        height: 100,
+                        width: 370,
+                        color: Colors.blue,
+                      )
+                    ],
+                  ),
                 ),
 
               ),
