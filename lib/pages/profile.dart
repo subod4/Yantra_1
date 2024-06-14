@@ -58,7 +58,7 @@ class _ProfileState extends State<Profile> {
               flex: 2,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: Colors.white,
 
                 ),
                 child: Center(
@@ -75,9 +75,9 @@ class _ProfileState extends State<Profile> {
                               height:100,
                               width: 70,
                               child: Icon(Icons.person, color: Colors.white,size: 100,),
-                            ),
+                            ),const SizedBox(width: 20),
                             Container(
-                                child: Text('Mohit Adhikari'),
+                                child: Text('Mohit Adhikari',style: TextStyle(fontSize: 25,),),
                             ),
                           ],
                         )
@@ -86,16 +86,52 @@ class _ProfileState extends State<Profile> {
                         height: 100,
                         width: 370,
                         color: Colors.blue,
+                          child:Row(
+                            children: [
+                              Container(
+                                height:100,
+                                width: 70,
+                                child: Icon(Icons.email, color: Colors.white,size: 100,),
+                              ),const SizedBox(width: 30),
+                              Container(
+                                child: Text('adhikari@gmail.com',style: TextStyle(fontSize: 25,),),
+                              ),
+                            ],
+                          )
                       ),const SizedBox(height: 10),
                       Container(
                         height: 100,
                         width: 370,
                         color: Colors.blue,
+                          child:Row(
+                            children: [
+                              Container(
+                                height:100,
+                                width: 70,
+                                child: Icon(Icons.car_rental, color: Colors.white,size: 100,),
+                              ),const SizedBox(width: 20),
+                              Container(
+                                child: Text('Ba2059',style: TextStyle(fontSize: 25,),),
+                              ),
+                            ],
+                          )
                       ),const SizedBox(height: 10),
                       Container(
                         height: 100,
                         width: 370,
                         color: Colors.blue,
+                          child:Row(
+                            children: [
+                              Container(
+                                height:100,
+                                width: 70,
+                                child: Icon(Icons.phone, color: Colors.white,size: 100,),
+                              ),const SizedBox(width: 30),
+                              Container(
+                                child: Text('986318966',style: TextStyle(fontSize: 25,),),
+                              ),
+                            ],
+                          )
                       )
                     ],
                   ),
