@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:yantra/pages/home.dart';
 import 'package:yantra/pages/profile.dart';
 import 'package:yantra/pages/qrGenerator.dart';
@@ -8,51 +7,66 @@ import 'package:yantra/pages/reserve.dart';
 import 'package:yantra/pages/setting.dart';
 import 'package:yantra/pages/timing.dart';
 
-void main()
-{
-  runApp(MaterialApp(home:MyApp()));
+void main() {
+  runApp(MaterialApp(home: MyApp()));
 }
-class MyApp extends StatefulWidget {
+
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  final List<Widget> pages=[
-    const Home(),
-    const Profile(),
-    const Setting(),
-  ];
-  int currentPage=0;
-  @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-
-        appBar: AppBar(title: Text("KatPark")),
-        body: pages[currentPage],
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: currentPage,
-            onTap: (value){
-            setState(() {
-              currentPage=value;
-            });
-            },
-            items:[
-              BottomNavigationBarItem(icon: Icon(Icons.home),
-                  label: 'Home'),
-              BottomNavigationBarItem(icon: Icon(Icons.person),
-                  label:'Person'),
-              BottomNavigationBarItem(icon: Icon(Icons.settings),
-                  label:'Settings'
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: 50,
+              width: 370,
+              color: Colors.black, // Add a background color to make it visible
+              child: Center(
+                child: Text(
+                  "Sign in as?",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-            ]
+            ),
+            SizedBox(height: 20), // Add some spacing between the containers
+            Container(
+              height: 200,
+              width: 300,
+              color: Colors.blue,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16.0),
+                child: Icon(
+                  Icons.car_rental,
+                  color: Colors.white,
+                  size: 100,
+                ),
+              ),
+            ),
+            SizedBox(height: 20), // Add some spacing between the containers
+            Container(
+              height: 200,
+              width: 300,
+              color: Colors.purple,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16.0),
+                child: Icon(
+                  Icons.apartment,
+                  color: Colors.white,
+                  size: 100,
+                ),
+              ),
+            ),
+          ],
         ),
-
-
+      ),
     );
-
-
   }
 }

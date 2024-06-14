@@ -1,0 +1,1 @@
+ C:\\Users\\Administrator\\Documents\\Subodh\ Git\\Yantra_1\\.dart_tool\\flutter_build\\b673ffa56524bb26f6e7775e826e2ab0\\native_assets.yaml: 
