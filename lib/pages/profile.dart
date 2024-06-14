@@ -14,6 +14,7 @@ class _ProfileState extends State<Profile> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+
         backgroundColor: Colors.white,
         body: Column(
           children: [

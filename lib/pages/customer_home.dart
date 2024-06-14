@@ -24,6 +24,25 @@ class _MyAppState extends State<CustomerHome> {
     return  Scaffold(
 
       appBar: AppBar(title: Text("KatPark")),
+      drawer: Drawer(
+          backgroundColor: Colors.deepPurple[100],
+          child:Column
+            (
+            children: [
+              DrawerHeader(child: Text('Edit Information',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),)),
+              ListTile(
+                leading:Icon(Icons.edit),
+                title: Text('E D I T  Informaation'),
+              ),
+              ListTile(
+                leading: Icon(Icons.call),
+                title: Text('Contact'),
+
+              )
+            ],
+          )
+
+      ) ,
       body: pages[currentPage],
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: currentPage,
