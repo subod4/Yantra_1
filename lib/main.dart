@@ -7,6 +7,7 @@ import 'package:yantra/pages/qrGenerator.dart';
 import 'package:yantra/pages/reserve.dart';
 import 'package:yantra/pages/setting.dart';
 import 'package:yantra/pages/timing.dart';
+import 'package:yantra/screen/signin_screen.dart';
 
 void main() {
   runApp(
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
             GestureDetector(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(
-                    builder: (context) => CustomerHome()));
+                    builder: (context) => SignInScreen()));
               },
               child: Container(
                 height: 200,
