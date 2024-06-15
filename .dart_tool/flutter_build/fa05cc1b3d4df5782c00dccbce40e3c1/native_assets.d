@@ -1,0 +1,1 @@
+ C:\\flutterapps\\hackathon\ project\ real\ one\\Yantra_1\\.dart_tool\\flutter_build\\fa05cc1b3d4df5782c00dccbce40e3c1\\native_assets.yaml: 
