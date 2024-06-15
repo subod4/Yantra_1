@@ -107,7 +107,7 @@ class Home extends StatelessWidget {
                             child: GestureDetector(
                                 onTap: () {
                                   Navigator.push(context, MaterialPageRoute(
-                                      builder: (context) => Generate()));
+                                      builder: (context) => QRCodeGenerator()));
                                 },
                                 child: Center(child: Text("Generate Qr",
                                   style: TextStyle(color: Colors.white,
