@@ -110,6 +110,18 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "qr",
+      "rootUri": "file:///C:/Users/Administrator/AppData/Local/Pub/Cache/hosted/pub.dev/qr-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "qr_flutter",
+      "rootUri": "file:///C:/Users/Administrator/AppData/Local/Pub/Cache/hosted/pub.dev/qr_flutter-4.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/flutter/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -170,7 +182,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-06-15T03:56:53.721346Z",
+  "generated": "2024-06-15T09:11:58.155240Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///C:/flutter/flutter",
