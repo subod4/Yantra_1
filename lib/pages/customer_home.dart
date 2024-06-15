@@ -16,8 +16,8 @@ class _CustomerHomeState extends State<CustomerHome> {
   final List<Widget> pages = [
     const Home(),
     const Profile(),
+    //const Setting(),
     const editInfo(),
-    const Setting(),
 
   ];
   int currentPage = 0;
