@@ -87,7 +87,7 @@ class Home extends StatelessWidget {
                           child: GestureDetector(
                               onTap: () {
                                 Navigator.push(context, MaterialPageRoute(
-                                    builder: (context) => Reserve()));
+                                    builder: (context) => MapScreen()));
                               },
                               child: Center(child: Text("Reserve Spot",
                                 style: TextStyle(color: Colors.white,
